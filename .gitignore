@@ -8,6 +8,12 @@
 # Logs
 *.log
 
+<<<<<<< Updated upstream
 # 과제 폴더는 main에서 무시
 CircularBuffer/
 LogFileManager/
+=======
+# Main에서는 제외
+CircularBuffer/
+LogFileManager/
+>>>>>>> Stashed changes
