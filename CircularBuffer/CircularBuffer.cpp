@@ -59,6 +59,11 @@ public:
         count--;
     }
 
+    class iterator{
+        iterator(CircularBuffer* c, size_t start, size_t iter = 0)
+        : cb(c), idx(start), iterated(iter) {}
+    }
+
 };
 
 // void main(){
