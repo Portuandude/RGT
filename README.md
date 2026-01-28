@@ -21,7 +21,7 @@ RAII(Resource Acquisition Is Initialization) 원칙을 기반으로
 
 ### 2. 컴파일
 ```bash
-g++ -std=c++17 LogFileManager.cpp main.cpp -std=c++17
+g++ LogFileManager.cpp main.cpp -std=c++17
 ```
 ### 3. 실행
 ```
