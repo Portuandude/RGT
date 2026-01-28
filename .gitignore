@@ -1,0 +1,12 @@
+# IDE
+.vscode/
+
+# Build outputs
+*.exe
+*.obj
+
+# Logs
+*.log
+
+# assignment_1 에서는 제외
+CircularBuffer/
