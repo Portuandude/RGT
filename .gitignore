@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # IDE / Editor
+=======
+# IDE
+>>>>>>> assigment_1
 .vscode/
 
 # Build outputs
@@ -8,6 +12,7 @@
 # Logs
 *.log
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 # 과제 폴더는 main에서 무시
 CircularBuffer/
@@ -17,3 +22,7 @@ LogFileManager/
 CircularBuffer/
 LogFileManager/
 >>>>>>> Stashed changes
+=======
+# assignment_1 에서는 제외
+CircularBuffer/
+>>>>>>> assigment_1
