@@ -14,19 +14,51 @@ private:
     size_t _capacity;
 
 public:
+    // 생성자
     explicit CircularBuffer(size_t capacity) 
         : buffer(capacity), capacity_(capacity) {}
 
-    size_t capacity() const { return capacity_; }
+
+    void begin()
+    void end()
+    //용량 반환
+    size_t capacity() const { return _capacity; }
     size_t size() const { return count; }
     bool empty() const{return conut == 0;}
 
+    //return lastest data
+    T& front() { return buffer[tail]; }
+    const T& front() const { return buffer[tail]; }
+
+    //return newest data
     T& back(){
-        size_t idx = (head == 0 ? capacity_ - 1 : head - 1);
+        size_t idx = (head == 0 ? _capacity - 1 : head - 1);
+        return buffer[idx];
     }
     const T& back() const{
-        size_t idx = (head == 0 ? capacity_ - 1 : head - 1);
+        size_t idx = (head == 0 ? _capacity - 1 : head - 1);
+        return buffer[idx];
     }
+
+    //add new data
+    void push_back(const T& item){
+        buffer[head] = item;
+        head = (head+1) % _capacity;
+        if(count < _capacity){
+            count++;
+        }
+        else{
+            tail = (tail+1) % _capacity;
+        }
+    }
+
+    //delete lastest data
+    void pop_front(){
+        if(count == 0) return;
+        tail = (tail + 1) % _capacity;
+        count--;
+    }
+
 };
 
 // void main(){
