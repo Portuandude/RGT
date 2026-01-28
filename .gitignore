@@ -1,0 +1,13 @@
+# IDE / Editor
+.vscode/
+
+# Build outputs
+*.exe
+*.obj
+
+# Logs
+*.log
+
+# 과제 폴더는 main에서 무시
+CircularBuffer/
+LogFileManager/
